@@ -13,9 +13,12 @@
 	1. uname -a
 	2. cat /etc/*release*
 	3. cat /etc/lsb-release
+	4. http://www.securitysift.com/download/linuxprivchecker.py 
 
 # Bash shells
 	1. /usr/bin/python -c 'import pty;pty.spawn("/bin/bash");'
+	2. sudo -i 
+		Lets the user to run the shell as root privs. Also acquires the root user's environment.
 	
 	
 # Bind Shells
