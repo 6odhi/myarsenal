@@ -19,11 +19,12 @@
 
 #Wordpress Scanning
 	1. wpscan --url https://10.0.2.9:12038/blogblog --enumerate uvp
-	2. wpscan --url https://10.0.2.9:12038/blogblog --enumerate p
+	2. wpscan --url https://10.0.2.9:12038/blogblog --enumerate ap
 	
     		u : enumerate usernames 
     		vp : vulnerable plugins
 		p : plugins
+		ap : all plugins
     
 #Changing a python urllib2.urlopen method to work with ssl
 
