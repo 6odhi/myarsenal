@@ -3,6 +3,9 @@
 	2. cat /etc/*release*
 	3. cat /etc/lsb-release
 
+#Bash shells
+	1. /usr/bin/python -c 'import pty;pty.spawn("/bin/bash");'
+	
 #Bind Shells
 
 
