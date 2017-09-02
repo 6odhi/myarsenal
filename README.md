@@ -8,6 +8,12 @@
 			
 	2. Searching and Catting  .bash_history file contents
 		cat $(find /home -name ".bash_history")
+		
+# Hash Cracking 
+
+	1. hash-identifier  
+		helps to check the type of hash; MD5, MD2
+	2. findmyhash MD5 -h b78aae356709f8c31118ea613980954b
 
 # Privilege Escalation
 	1. uname -a
