@@ -69,3 +69,7 @@
 # smb scan
 	1. smbclient -L 192.168.1.1
 	2. 
+
+# Uploading files using curl when PUT enabled
+
+	1. curl http://10.0.2.12/test/ --upload-file test.php
