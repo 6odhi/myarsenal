@@ -73,3 +73,6 @@
 # Uploading files using curl when PUT enabled
 
 	1. curl http://10.0.2.12/test/ --upload-file test.php
+	
+# Nikto commands
+	1. nikto -host 10.0.2.12 -port 80 -root /test/
