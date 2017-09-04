@@ -15,11 +15,12 @@
 		helps to check the type of hash; MD5, MD2
 	2. findmyhash MD5 -h b78aae356709f8c31118ea613980954b
 
-# Privilege Escalation
+# Privilege Escalation (Linux)
 	1. uname -a
 	2. cat /etc/*release*
 	3. cat /etc/lsb-release
 	4. http://www.securitysift.com/download/linuxprivchecker.py 
+	5. Check for /etc/crontab file and further directories like /etc/cron.daily etc
 
 # Bash shells
 	1. /usr/bin/python -c 'import pty;pty.spawn("/bin/bash");'
