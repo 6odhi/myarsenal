@@ -71,7 +71,10 @@
     
 # smb scan
 	1. smbclient -L 192.168.1.1
-	2. 
+	2. nmblookup -A target
+	3. smbclient //MOUNT/share -I target -N
+	4. rpcclient -U "" target
+	5. enum4linux target
 
 # Uploading files using curl when PUT enabled
 
