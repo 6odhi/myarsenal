@@ -275,4 +275,10 @@
 
 	?> 
 
+# nmap
+	1. nmap -iL list.txt -sn -Pn
+	
+		-sn : Nmap not to do a port scan after host discovery, and only print out the available hosts that responded 			   to the host discovery probes.
+		
+	2. 
 
