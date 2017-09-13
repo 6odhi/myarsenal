@@ -281,3 +281,15 @@
 		-sn : Nmap not to do a port scan after host discovery, and only print out the available hosts that responded 			   to the host discovery probes.
 		
 	2. 
+
+# DELETE request using forms 
+<html>
+  <body>
+    <form action="https://test.com" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Submit request" />
+
+    </form>
+  </body>
+</html>
+https://stackoverflow.com/questions/11833061/is-csrf-possible-with-put-or-delete-methods
