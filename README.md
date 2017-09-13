@@ -283,12 +283,12 @@
 	2. 
 
 # DELETE request using forms 
-<html>
-<body>
-<form action="https://test.com" method="POST">
-<input type="hidden" name="_method" value="DELETE">
-<input type="submit" value="Submit request" />
-</form>
-</body>
-</html>
+	1. 	<html>
+		<body>
+		<form action="https://test.com" method="POST">
+		<input type="hidden" name="_method" value="DELETE">
+		<input type="submit" value="Submit request" />
+		</form>
+		</body>
+		</html>
 https://stackoverflow.com/questions/11833061/is-csrf-possible-with-put-or-delete-methods
