@@ -280,7 +280,8 @@
 	
 		-sn : Nmap not to do a port scan after host discovery, and only print out the available hosts that responded 			   to the host discovery probes.
 		
-	2. 
+	2. nmap -sU -p- -Pn -iL scopeList.txt -oA udpScanOutput
+		- scanning all udp ports (-sU, -p-) and taking input from the list. Saving output in all formats using -oA.
 
 # DELETE request using forms 
 	1. 	<html>
