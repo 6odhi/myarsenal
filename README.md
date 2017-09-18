@@ -282,6 +282,8 @@
 		
 	2. nmap -sU -p- -Pn -iL scopeList.txt -oA udpScanOutput
 		- scanning all udp ports (-sU, -p-) and taking input from the list. Saving output in all formats using -oA.
+		
+https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/
 
 # DELETE request using forms 
 	1. 	<html>
