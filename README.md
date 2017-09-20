@@ -309,3 +309,17 @@ https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/
 		</body>
 		</html>
 https://stackoverflow.com/questions/11833061/is-csrf-possible-with-put-or-delete-methods
+
+# Echo timestamp request
+
+		1. hping3 x.x.x.x --icmp --icmp-ts -V
+		 TimeStampRequest (Type 13) and TimeStamp Reply (Type14): Asks the machine for its current time (based on 		   milliseconds from midnight GMT). If it responds... well you know it is alive AND you know roughly where in 		       the world the IP is.
+		
+https://serverfault.com/questions/818058/get-remote-system-time-from-icmp-timestamp
+
+
+:References:
+
+http://sketchymoose.blogspot.in/2012/01/beginning-web-pen-testing-icmp-scans.html
+
+
