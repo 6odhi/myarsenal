@@ -102,6 +102,9 @@
 			-0 : http version to be used	
 # Nikto commands
 	1. nikto -host 10.0.2.12 -port 80 -root /test/
+	
+# ftp brute
+	1. hydra -V -L user.lst -P password.lst ftp://192.168.X.X
 
 # Custom php shell
 	<?php
