@@ -107,6 +107,8 @@
 		log=^USER^&pwd=^PASS^&submit=Log+In  : POST parameters
 		F=Invalid username  : Ignore all the responses when the response text contain this 'Invalid username' string
 
+# Breaking hashes with hashcat
+		./hashcat64.bin -a 0 -m 0 passwordFile /usr/share/wordlists/rockyou.txt -o result.txt
 
 # Uploading files using curl when PUT enabled
 
