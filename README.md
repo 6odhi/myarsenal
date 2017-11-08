@@ -14,7 +14,12 @@
 	1. hash-identifier  
 		helps to check the type of hash; MD5, MD2
 	2. findmyhash MD5 -h b78aae356709f8c31118ea613980954b
+	
+	3. hashcat -a 0 -m 0 fileContaingHash /usr/share/wordlists/rockyou.txt -o result.txt
 
+		 -m 0; 0 is for md5
+		 -a 0; attacks mode is set to 0 which means straight
+		 
 # Privilege Escalation (Linux)
 	1. uname -a
 	2. cat /etc/*release*
@@ -106,9 +111,7 @@
 		/admin.php : Location of the post form
 		log=^USER^&pwd=^PASS^&submit=Log+In  : POST parameters
 		F=Invalid username  : Ignore all the responses when the response text contain this 'Invalid username' string
-
-# Breaking hashes with hashcat
-		./hashcat64.bin -a 0 -m 0 passwordFile /usr/share/wordlists/rockyou.txt -o result.txt
+		 
 
 # Uploading files using curl when PUT enabled
 
