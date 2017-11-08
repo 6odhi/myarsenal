@@ -349,6 +349,9 @@ https://serverfault.com/questions/818058/get-remote-system-time-from-icmp-timest
 # Bash command shortcuts for editing files
 		1. sort -u fileName.txt > /tmp/newFile.txt   ---> Remove duplicate enteries and create a new file
 
+# Base64 decode bash commandline
+		echo ZWxsaW90OkVSMjgtMDY1Mgo= | base64 -d
+
 :References:
 
 http://sketchymoose.blogspot.in/2012/01/beginning-web-pen-testing-icmp-scans.html
