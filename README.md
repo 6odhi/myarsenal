@@ -26,6 +26,8 @@
 	3. cat /etc/lsb-release
 	4. http://www.securitysift.com/download/linuxprivchecker.py 
 	5. Check for /etc/crontab file and further directories like /etc/cron.daily etc
+	6. Checking SUID files available in the system by running
+		find / -perm -u=s -type f 2>/dev/null
 
 # Bash shells
 	1. /usr/bin/python -c 'import pty;pty.spawn("/bin/bash");'
