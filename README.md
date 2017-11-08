@@ -336,7 +336,7 @@ https://serverfault.com/questions/818058/get-remote-system-time-from-icmp-timest
 # Post Exploitation; techniques for becoming root
 		1. On linux systems, check "sudo -l" for list of allowed commands for the user.
 		2. From within the man page, we can execute random commands by using a '!' symbol.
-			!/bin/bash  or  !cat /etc/passwd
+			!/bin/bash  or  !cat /etc/shadow
 
 :References:
 
