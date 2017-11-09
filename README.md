@@ -59,7 +59,10 @@
 # Basic Authentication Brute
 
 	1. hydra -s 443 -l <username> -P <wordlist> -t 1 -f -vV <ip address> https-get <url directory, i.e. />
-		
+	
+# SMTP enumeration
+	1. smtp-user-enum -M VRFY -U /usr/share/metasploit-framework/data/wordlists/unix_users.txt -t <ipAddress>
+	2. auxiliary/scanner/smtp/smtp_enum
 		 
 # Sqlmap
 
