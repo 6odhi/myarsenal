@@ -83,6 +83,9 @@
     		vp : vulnerable plugins
 		p : plugins
 		ap : all plugins
+		
+	3. Bruteforce login credentials on wordpress site
+		wpscan --url http://192.168.1.2 --wordlist=/path/to/file.txt --username rama --threads 20
     
 # Changing a python urllib2.urlopen method to work with ssl
 
