@@ -44,7 +44,8 @@
 	
 	wget -i <fileContainingUrls.txt>
 
-
+# zip password brute-force using fcrackzip
+	1. fcrackzip -v -D -u -p ~/tr0ll2/answer2.txt lmao.zip 
 
 # Reverse Shells
 	1. Python shell
