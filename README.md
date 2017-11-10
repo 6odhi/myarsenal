@@ -38,6 +38,12 @@
 	
 # Bind Shells
 
+# wget
+
+	1. To download all the files from a list of urls, use option -i
+	
+	wget -i <fileContainingUrls.txt>
+
 
 
 # Reverse Shells
