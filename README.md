@@ -94,6 +94,8 @@
 	
 	4. python sqlmap -u “https://target.com/index.php?name=abc" --risk=3 --level=5 --exclude-sysdbs --no-cast
 		--no-cast can also be used to decrease the payloads length
+		
+	5. sqlmap -r sql.txt --level=5 --risk=3
 
 # Wordpress Scanning
 	1. wpscan --url https://10.0.2.9:12038/blogblog --enumerate uvp
