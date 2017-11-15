@@ -443,6 +443,6 @@ http://sketchymoose.blogspot.in/2012/01/beginning-web-pen-testing-icmp-scans.htm
 https://hackertarget.com/brute-forcing-passwords-with-ncrack-hydra-and-medusa/
 http://xforeveryman.blogspot.in/2012/01/helper-brute-force-https-basic-access.html
 http://shell-storm.org/shellcode/
+http://gwae.trollab.org/sqlite-injection.html
 
 
-cat /proc/sys/kernel/randomize_va_space
