@@ -1,3 +1,4 @@
+# OTRS OPM BackDoor Reverse Shell 
 #Should work with OTRS 5.0.2 software
 #Follow the below steps to take a reverse shell on the victim when opm package needs to be installed using otrs.xml file.
 Include otrs.xml and .opm files in the same folder.
