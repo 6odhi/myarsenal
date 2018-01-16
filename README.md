@@ -448,6 +448,9 @@ https://serverfault.com/questions/818058/get-remote-system-time-from-icmp-timest
 
 # Base64 decode bash commandline
 		echo ZWxsaW90OkVSMjgtMDY1Mgo= | base64 -d
+		
+# Sniffing http traffic using tcpdump
+		1. tcpdump -c 20 -s 0 -i eth1 -A host 192.168.1.1 and tcp port http
 
 :References:
 
@@ -456,5 +459,6 @@ https://hackertarget.com/brute-forcing-passwords-with-ncrack-hydra-and-medusa/
 http://xforeveryman.blogspot.in/2012/01/helper-brute-force-https-basic-access.html
 http://shell-storm.org/shellcode/
 http://gwae.trollab.org/sqlite-injection.html
+http://sleeplesscoding.blogspot.in/2011/01/using-tcpdump-to-sniff-http-traffic.html
 
 
